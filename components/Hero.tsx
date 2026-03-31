@@ -4,7 +4,7 @@ import { ArrowRight, Phone, MessageCircle } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[85vh] flex flex-col  overflow-hidden bg-brand-purple">
+    <section className="relative min-h-[85vh] flex flex-col  overflow-hidden bg-brand-blue">
       {/* Background Wave */}
       <div className="absolute inset-0 pointer-events-none">
         {/* Top-right glow or decorative shape if needed */}
@@ -27,15 +27,15 @@ const Hero = () => {
           </div>
 
           <div className="flex flex-wrap gap-4 pt-4">
-            <button className="flex items-center gap-2 border border-white/40 hover:bg-white hover:text-brand-purple px-6 py-3 rounded-2xl font-bold transition-all group">
+            <button className="flex items-center gap-2 border border-white/40 hover:bg-white hover:text-brand-blue px-6 py-3 rounded-2xl font-bold transition-all group">
               Enquire now
-              <div className="bg-white/20 group-hover:bg-brand-purple/10 rounded-full p-1">
+              <div className="bg-white/20 group-hover:bg-brand-blue/10 rounded-full p-1">
                 <ArrowRight className="w-4 h-4" />
               </div>
             </button>
-            <button className="flex items-center gap-2 border border-white/40 hover:bg-white hover:text-brand-purple px-6 py-3 rounded-2xl font-bold transition-all group">
+            <button className="flex items-center gap-2 border border-white/40 hover:bg-white hover:text-brand-blue px-6 py-3 rounded-2xl font-bold transition-all group">
               Call now
-              <div className="bg-white/20 group-hover:bg-brand-purple/10 rounded-full p-1">
+              <div className="bg-white/20 group-hover:bg-brand-blue/10 rounded-full p-1">
                 <Phone className="w-4 h-4" />
               </div>
             </button>

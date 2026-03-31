@@ -1,16 +1,16 @@
 'use client';
 
 import React, { useState } from 'react';
-import { 
-  Code2, 
-  BarChart3, 
-  Layers, 
-  Database, 
-  Terminal, 
-  Cpu, 
-  ShieldCheck, 
-  PieChart, 
-  Globe, 
+import {
+  Code2,
+  BarChart3,
+  Layers,
+  Database,
+  Terminal,
+  Cpu,
+  ShieldCheck,
+  PieChart,
+  Globe,
   Blocks,
   ArrowRight
 } from 'lucide-react';
@@ -40,14 +40,11 @@ const Courses = () => {
       <div className="max-w-7xl mx-auto px-6 text-center">
         {/* Header */}
         <div className="space-y-4 mb-16">
-          <h4 className="text-brand-purple font-bold text-lg uppercase tracking-wider">Our Courses</h4>
-          <h2 className="text-4xl lg:text-5xl font-black text-brand-purple">Trainings We Offer</h2>
+          <h4 className="text-brand-blue font-bold text-lg uppercase tracking-wider"> Programs That Shape Careers/ Future-Ready Programs
+          </h4>
+          <h2 className="text-4xl lg:text-5xl font-black text-brand-blue">Our Learning Programs</h2>
           <p className="max-w-3xl mx-auto text-zinc-600 text-lg leading-relaxed pt-2">
-            Explore our carefully curated courses that blend academic excellence with practical skills, 
-            preparing you for success in your chosen field. We train you to upgrade your skills and 
-            practical knowledge, with the broadly designed syllabus and state-of-the-art facility. 
-            Choose among various software training programs we are offering and get the mentorship of 
-            industry experts to stand sturdy in the industry.
+            Discover programs designed to go beyond theory, combining strong foundational knowledge with hands-on experience that truly prepares you for the professional world. At CodeZia, our training is structured to help you build relevant skills through a well-crafted curriculum and a modern learning environment. With a range of specialized programs and guidance from experienced mentors, you’ll gain the confidence and capability to grow and succeed in today’s competitive industry.
           </p>
         </div>
 
@@ -57,11 +54,10 @@ const Courses = () => {
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`px-8 py-3 rounded-xl font-bold transition-all border-2 ${
-                activeCategory === category
-                  ? 'bg-brand-purple text-white border-brand-purple shadow-lg scale-105'
-                  : 'bg-white text-brand-purple border-zinc-100 hover:border-brand-purple/20'
-              }`}
+              className={`px-8 py-3 rounded-xl font-bold transition-all border-2 ${activeCategory === category
+                ? 'bg-brand-blue text-white border-brand-blue shadow-lg scale-105'
+                : 'bg-white text-brand-blue border-zinc-100 hover:border-brand-blue/20'
+                }`}
             >
               {category}
             </button>
@@ -72,14 +68,14 @@ const Courses = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-16">
           {filteredCourses.length > 0 ? (
             filteredCourses.map((course) => (
-              <div 
+              <div
                 key={course.name}
-                className="group p-8 rounded-3xl border border-zinc-100 bg-zinc-50/50 hover:bg-white hover:shadow-2xl hover:shadow-purple-500/10 transition-all duration-300 flex flex-col items-center text-center gap-4 cursor-pointer hover:-translate-y-2"
+                className="group p-8 rounded-3xl border border-zinc-100 bg-zinc-50/50 hover:bg-white hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 flex flex-col items-center text-center gap-4 cursor-pointer hover:-translate-y-2"
               >
-                <div className="p-4 rounded-2xl bg-white shadow-sm group-hover:bg-brand-purple/5 transition-colors">
+                <div className="p-4 rounded-2xl bg-white shadow-sm group-hover:bg-brand-blue/5 transition-colors">
                   {course.icon}
                 </div>
-                <h3 className="font-bold text-brand-purple leading-tight">{course.name}</h3>
+                <h3 className="font-bold text-brand-blue leading-tight">{course.name}</h3>
               </div>
             ))
           ) : (

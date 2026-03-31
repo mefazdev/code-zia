@@ -11,14 +11,15 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
       <Banner />
-      <div className="bg-brand-purple text-white">
+      <div className="bg-brand-blue text-white">
         <Navbar />
         <Hero />
       </div>
-      <About />
-      <WhyChooseUs />
-      <Process />
       <Courses />
+      <About />
+
+      <Process />
+      <WhyChooseUs />
       <Footer />
     </div>
   );

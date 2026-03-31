@@ -14,7 +14,7 @@ import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <footer className="bg-brand-purple text-white pt-20 pb-10">
+    <footer className="bg-brand-blue text-white pt-20 pb-10">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand Column */}
@@ -29,8 +29,7 @@ const Footer = () => {
               />
             </Link>
             <p className="text-white/60 leading-relaxed">
-              Leading software training institute in Kerala, transforming students into skilled IT professionals since 2016.
-            </p>
+              CodeZia is your gateway to mastering modern technology and building a career with practical, future-ready skills.   </p>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-yellow hover:text-black transition-all">
                 <Instagram className="w-5 h-5" />
@@ -75,7 +74,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-brand-yellow shrink-0" />
-                <p>info@thefuturalabs.com</p>
+                <p>info@codezia.com</p>
               </div>
             </div>
           </div>
@@ -99,7 +98,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="pt-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-white/40 text-sm">
-          <p>© 2026 Futura Labs. All rights reserved.</p>
+          <p>© 2026 Codezia. All rights reserved.</p>
           <div className="flex gap-8">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
